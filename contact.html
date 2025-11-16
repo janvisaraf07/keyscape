@@ -6,50 +6,127 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KeyScape | Contact</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="key.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
 
 </head>
 
 <body>
     <!-- HEADER -->
     <header>
-        <div class="logo">KeyScape</div>
+        <div class="logo">
+            <span><img src="key.png" width="40" alt="key"></span>
+            <span>KeyScape</span>
+        </div>
 
         <nav class="nav">
             <a href="index.html">Home</a>
             <a href="properties.html">Properties</a>
             <a href="about.html">About</a>
             <a href="login.html">Login</a>
-            <a href="contact.html">Contact</a>
+            <a href="contact.html" class="active">Contact</a>
         </nav>
     </header>
 
-    <section id="Contact" class="contact">
-        <h2>Contact Us</h2>
-        <div class="contact-card">
-            <form>
-                <input type="text" placeholder="Your Name" required>
-                <input type="email" placeholder="Your Email" required>
+    <!-- CONTACT PAGE -->
+
+    <section id="Contact" class="contact-section">
+        <h2><span>Get In</span> <strong>Touch</strong></h2>
+        <p class="subtitle">Ready to find your dream property? Contact us today</p>
+        <div class="contact-container">
+
+            <!-- Left side: Contact form -->
+            <form class="contact-form">
+                <div class="row">
+                    <input type="text" placeholder="First Name" required>
+                    <input type="text" placeholder="Last Name" required>
+                </div>
+
+                <input type="email" placeholder="Email Address" required>
+                <input type="number" placeholder="Phone Number" required>
+
                 <textarea placeholder="Your Message" rows="5" required></textarea>
-                <button type="submit">Send Message</button>
+
+                <button type="submit" class="sendmessagecontact">Send Message</button>
             </form>
+
+            <!-- Right side: Info cards -->
+            <div class="info-box">
+
+                <div class="info-card">
+                    <h3>📞 Phone</h3>
+                    <p>+1 (555) 123-4567</p>
+                    <p>Mon-Fri 9am-6pm</p>
+                </div>
+
+                <div class="info-card">
+                    <h3>📧 Email</h3>
+                    <p>info@keyscape.com</p>
+                    <p>support@keyscape.com</p>
+                </div>
+
+                <div class="info-card">
+                    <h3>📍 Office</h3>
+                    <p>123 Luxury Avenue<br>New York, NY 10001</p>
+                </div>
+
+            </div>
+
         </div>
     </section>
 
+    <!-- FOOTER -->
+
+
     <footer class="footer">
-        <p>© 2025 KeyScape. All Rights Reserved.</p>
-        <div class="footer-links">
-            <a href="#home">Home</a>
-            <a href="#featured">Properties</a>
-            <a href="#about">About</a>
-            <a href="#contact">Contact</a>
+
+        <div class="footer-top">
+            <h2 class="logo">Keyscape</h2>
+            <p class="tagline">
+                Your trusted partner in luxury real estate.<br>
+                Transforming dreams into addresses.
+            </p>
+
+            <div class="social-links">
+                <a href="#"><i class="fa-brands fa-facebook"></i> Facebook</a>
+                <a href="#"><i class="fa-brands fa-twitter"></i> Twitter</a>
+                <a href="#"><i class="fa-brands fa-instagram"></i> Instagram</a>
+                <a href="#"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+            </div>
         </div>
+
+        <div class="footer-sections">
+
+            <div class="section">
+                <h3>Services</h3>
+                <p>Buy Property</p>
+                <p>Sell Property</p>
+                <p>Rent Property</p>
+                <p>Property Management</p>
+            </div>
+
+            <div class="section">
+                <h3>Company</h3>
+                <p>About Us</p>
+                <p>Our Team</p>
+                <p>Careers</p>
+                <p>Contact</p>
+            </div>
+
+            <div class="section">
+                <h3>Legal</h3>
+                <p>Privacy Policy</p>
+                <p>Terms of Service</p>
+                <p>Cookie Policy</p>
+                <p>Disclaimer</p>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2025 Keyscape. All rights reserved.</p>
+            <p>Made with ❤️ for luxury real estate</p>
+        </div>
+
     </footer>
-
-
-
-
-
-
-</body>
-
-</html>
