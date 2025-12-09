@@ -37,19 +37,18 @@
         <div class="contact-container">
 
             <!-- Left side: Contact form -->
-            <form class="contact-form">
+            <form class="contact-form" onsubmit="return redirectThankYou()">
                 <div class="row">
                     <input type="text" placeholder="First Name" required>
                     <input type="text" placeholder="Last Name" required>
                 </div>
-
                 <input type="email" placeholder="Email Address" required>
                 <input type="number" placeholder="Phone Number" required>
-
-                <textarea placeholder="Your Message" rows="5" required></textarea>
-
+                <textarea placeholder="Your Message..." rows="5" required id="message"></textarea>
+                <p id="charCount">0 / 200</p>
                 <button type="submit" class="sendmessagecontact">Send Message</button>
             </form>
+
 
             <!-- Right side: Info cards -->
             <div class="info-box">
@@ -75,6 +74,7 @@
 
         </div>
     </section>
+
 
     <!-- FOOTER -->
 
@@ -130,3 +130,14 @@
         </div>
 
     </footer>
+    <script>
+        const message = document.getElementById("message");
+        const counter = document.getElementById("charCount");
+
+        message.addEventListener("input", () => {
+            const length = message.value.length;
+            counter.textContent = `${length} / 200`;
+        });
+    </script>
+    <script src="script.js"></script>
+</body>

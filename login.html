@@ -30,38 +30,29 @@
     <!-- LOGIN SECTION -->
     <section class="login">
 
-    <h2><span>Login to</span> <strong>KeyScape</strong></h2>
+        <h2><span>Login to</span> <strong>KeyScape</strong></h2>
 
-    <div class="login-card">
+        <div class="login-card">
+            <!-- form -->
+            <form class="login-form" id="loginForm">
+                <input type="text" id="username" placeholder="Username" required>
+                <input type="password" id="password" placeholder="Password" required>
+                <div class="options">
+                    <label><input type="checkbox"> Remember me</label>
+                    <a href="#">Forgot Password?</a>
+                </div>
+                <button type="submit">Login</button>
+            </form>
 
-        <form class="login-form">
 
-            <input type="email" placeholder="Email Address" required>
-            <input type="password" placeholder="Password" required>
+        </div>
 
-            <div class="options">
-                <label>
-                    <input type="checkbox"> Remember Me
-                </label>
-                <a href="#">Forgot Password?</a>
-            </div>
-
-            <button type="submit">Login</button>
-
-            <p class="signup-text">
-                Don’t have an account? <a href="#">Sign Up</a>
-            </p>
-
-        </form>
-
-    </div>
-
-</section>
+    </section>
 
 
     <!-- FOOTER -->
 
-   
+
     <footer class="footer">
 
         <div class="footer-top">
@@ -113,3 +104,5 @@
         </div>
 
     </footer>
+    <script src="script.js"></script>
+</body>

@@ -199,7 +199,11 @@ button:hover{
 /* ---------------------------------- */
 /* FEATURED PROPERTIES */
 /* ---------------------------------- */
-
+/* Section spacing */
+.featured {
+    padding: 40px 20px;
+    text-align: center;
+}
 
 
 /* Card */
@@ -699,4 +703,38 @@ button {
     .footer-sections {
         gap: 15px;
     }
+}
+
+/* Lightbox background */
+.lightbox {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.8);
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+/* Lightbox image */
+.lightbox img {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 10px;
+    box-shadow: 0 0 20px black;
+    animation: fadeIn 0.2s ease;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: scale(0.95); }
+    to   { opacity: 1; transform: scale(1); }
+}
+
+#charCount {
+    font-size: 14px;
+    margin-top: 5px;
+    color: gray;
 }
